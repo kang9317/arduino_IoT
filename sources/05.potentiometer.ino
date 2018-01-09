@@ -1,7 +1,5 @@
-int sensorPin = 0;
+const int sensorPin = 0;
 const int ledPin=9;
-
-//int sensorPin = A0;
 
 void setup() {
   pinMode(ledPin,OUTPUT);
