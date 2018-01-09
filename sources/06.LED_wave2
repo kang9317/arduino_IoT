@@ -1,0 +1,20 @@
+#define DELAY_TIME 100
+
+void setup() {
+  for(int i = 2; i <= 6; i++){ 
+    pinMode(i, OUTPUT);
+  }
+}
+
+void loop() {
+  for(int i = 2; i <= 6; i++){
+    digitalWrite(i,HIGH);
+    delay(DELAY_TIME);
+    digitalWrite(i,LOW);
+  }
+  for(int i = 5; i > 2; i --){
+    digitalWrite(i,HIGH);
+    delay(DELAY_TIME);
+    digitalWrite(i,LOW);
+  }
+}
