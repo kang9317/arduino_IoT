@@ -25,7 +25,15 @@ void loop() {
     analogWrite(G, 68);
     analogWrite(B, 255);
     delay(200);
-  } else {
+  } else if (data == '4') {
+    analogWrite(R, 0);
+    analogWrite(G, 27);
+    analogWrite(B, 255);
+  } else if (data == '5') {
+    analogWrite(R, 84);
+    analogWrite(G, 13);
+    analogWrite(B, 255);
+  } else if (data == 'r') {
     analogWrite(R, 255);
     analogWrite(G, 255);
     analogWrite(B, 255);
